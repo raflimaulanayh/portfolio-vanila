@@ -63,4 +63,14 @@ body {
     .social {
         @apply p-2 text-black bg-white rounded-full;
     }
+
+    .swiper-wrapper {
+        margin-left: 120px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .swiper-wrapper {
+            margin-left: 0px;
+        }
+    }
 }

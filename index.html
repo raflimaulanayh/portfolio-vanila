@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/assets/dist/output.css">
     <link rel="icon" type="image/ico" href="/assets/static/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
@@ -44,7 +46,8 @@
                 <li class="hover:text-gradient-primary">
                     <a href="#">Certificate</a>
                 </li>
-                <span class="px-6 py-3 text-sm font-semibold sm:text-base btn-primary font-poppins"><a href="/">Hire
+                <span class="px-6 py-3 text-sm font-semibold sm:text-base btn-primary font-poppins"><a
+                        href="https://www.linkedin.com/in/rafli-maulana-48116525b/">Hire
                         Me</a></span>
             </ul>
         </nav>
@@ -66,7 +69,7 @@
                     </p>
                 </div>
                 <span class="px-8 py-3 mt-5 text-sm font-semibold sm:text-base sm:mt-8 btn-primary font-poppins"><a
-                        href="/">Download
+                        href="https://www.linkedin.com/in/rafli-maulana-48116525b/details/experience/">Download
                         CV</a></span>
             </article>
             <img src="/assets/static/images/hero/foto-rafli-v2.svg" alt="" class="w-11/12 bg-no-repeat lg:w-6/12">
@@ -115,11 +118,291 @@
     </section>
     <!-- Skills End -->
 
-    <!-- Education Start -->
-    <!-- <section class="py-24 text-center bg-dark-gray">
+    <!-- Projects Start -->
+    <section class="relative z-30 py-24 bg-dark">
+        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Projects</h2>
+        <div class="swiper mySwiper container-custom">
+            <div class="px-4 swiper-wrapper">
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/dkk-consulting.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://dkk-consulting.vercell.app">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">DKK Consulting</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/impact-alliance.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://impact-alliance.vercell.app">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Impact Alliance</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/food-id.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://food-id.vercell.app">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">FOOD ID</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/car-rental.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Rental Car</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/ima.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">IMA x Tempo</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/cerita-pelajar.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Cerita Pelajar</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/voting-yuk.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Voting Yuk</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/sky-food.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Sky Foods</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/projects/konversi.png" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
+                        <a href="">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                        <a href="">
+                            <img src="/assets/static/icons/socials/github.svg" alt=""
+                                class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Konversi</h6>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- Projects End -->
 
+    <!-- Education Start -->
+    <!-- <section class="py-32 text-center bg-dark-gray">
+        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Education</h2>
+        <article class="grid grid-cols-3 container-custom lg:w-10/12">
+            <div class="relative">
+                <div
+                    class="absolute top-0 -left-[17px] lg:-left-5 bg-[#EA1F27] h-8 w-8 rounded-full border-4 border-white hover:scale-110">
+                </div>
+                <div class="flex items-center space-x-3">
+                    <img src="/assets/static/images/educations/nesas.svg" alt="">
+                    <span class="text-center">
+                        <h6 class="text-lg font-bold text-white">Nesas</h6>
+                        <p class="text-sm text-gradient-secondary">On Progress</p>
+                    </span>
+                </div>
+            </div>
+        </article>
     </section> -->
     <!-- Education End -->
+
+    <!-- Certificate Start -->
+    <section class="relative z-30 py-24 bg-dark">
+        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Certificates</h2>
+        <div class="swiper mySwiper container-custom">
+            <div class="px-4 swiper-wrapper">
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/certificates/internship-sawala.jpg" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
+                    <div class="absolute inset-0 group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Sawala Internship</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/certificates/javascript-course.jpg" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Javascript Course</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/certificates/reactjs-course.jpg" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">React JS Course</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/certificates/laravel-course.jpg" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">Laravel Course</h6>
+                </figure>
+                <figure
+                    class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
+                    <img src="/assets/static/images/certificates/tailwindcss-course.jpg" alt=""
+                        class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
+                    <div class="absolute inset-0 rounded-2xl group-hover:bg-black/70">
+                    </div>
+                    <figcaption
+                        class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
+                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                            <img src="/assets/static/icons/preview.svg" alt=""
+                                class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
+                        </a>
+                    </figcaption>
+                    <h6 class="pt-2 font-bold text-center text-white">TailwindCSS Course</h6>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- Certificate End -->
 
     <!-- Footer Start -->
     <footer class="pt-32 bg-dark lg:pt-40">
@@ -150,7 +433,7 @@
                     <a href="https://instagram.com/rafmlnayh" target="_blank">
                         <img src="/assets/static/icons/socials/instagram.svg" alt="" class="social">
                     </a>
-                    <a href="https://linkedin.com/raflimaulana/" target="_blank">
+                    <a href="https://www.linkedin.com/in/rafli-maulana-48116525b/" target="_blank">
                         <img src="/assets/static/icons/socials/linkedin.svg" alt="" class="social">
                     </a>
                     <a href="https://wa.me/6281320179936" target="_blank">
@@ -161,6 +444,26 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
 </body>
 
 </html>
