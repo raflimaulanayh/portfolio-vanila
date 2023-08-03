@@ -16,7 +16,7 @@
 
 <body>
     <!-- Navbar Start -->
-    <header class="fixed w-full border-b backdrop-blur-lg border-white/70">
+    <header class="fixed z-50 w-full border-b backdrop-blur-lg border-white/70">
         <nav class="flex items-center justify-between py-6 container-custom lg:w-10/12">
             <a href="#">
                 <img src="/assets/static/favicon.svg" alt="">
@@ -44,6 +44,8 @@
                 <li class="hover:text-gradient-primary">
                     <a href="#">Certificate</a>
                 </li>
+                <span class="px-6 py-3 text-sm font-semibold sm:text-base btn-primary font-poppins"><a href="/">Hire
+                        Me</a></span>
             </ul>
         </nav>
     </header>
@@ -55,57 +57,57 @@
             class="flex flex-col-reverse items-center gap-10 container-custom lg:justify-between lg:flex-row lg:w-10/12 lg:gap-52">
             <article class="lg:w-6/12">
                 <div class="space-y-2">
-                    <h1 class="text-gradient-primary">Hi there, I am</h1>
-                    <h2 class="text-3xl font-bold text-white sm:text-5xl">Rafli Maulana</h2>
-                    <p class="text-lg font-medium sm:text-2xl text-gradient-primary"><span
-                            class="text-gradient-secondary">Founder</span> Sky Universe Nusantara</p>
+                    <h1 class="font-bold text-bianca">Hi there, I am</h1>
+                    <h2 class="text-3xl font-bold text-white sm:text-5xl text-gradient-primary">Rafli Maulana</h2>
+                    <p class="text-lg font-medium text-white sm:text-2xl">Founder Sky Universe Nusantara</p>
                     <p class="text-sm text-white sm:text-base font-poppins">I am someone who always pours all my ideas
                         and thoughts into
                         technology to create something special.
                     </p>
                 </div>
-                <span class="px-6 py-3 mt-5 text-sm font-semibold sm:text-base sm:mt-8 btn-primary font-poppins"><a
+                <span class="px-8 py-3 mt-5 text-sm font-semibold sm:text-base sm:mt-8 btn-primary font-poppins"><a
                         href="/">Download
                         CV</a></span>
             </article>
-            <img src="/assets/static/images/hero/foto-rafli.svg" alt="" class="w-11/12 bg-no-repeat lg:w-6/12">
+            <img src="/assets/static/images/hero/foto-rafli-v2.svg" alt="" class="w-11/12 bg-no-repeat lg:w-6/12">
         </div>
     </section>
     <!-- Hero End -->
 
     <!-- Skills Start -->
-    <section id="skills" class="py-32 lg:py-40 bg-dark">
+    <section id="skills" class="relative py-32 lg:py-40 bg-dark">
+        <img src="/assets/static/looper.svg" alt="" class="absolute bottom-0 z-0 w-full">
         <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Skills</h2>
         <article class="grid grid-cols-1 gap-5 container-custom lg:w-10/12 sm:grid-flow-col-3 lg:grid-cols-4 lg:gap-8">
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/javascript.svg" alt="">
                 <p>Javascript</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/typescript.svg" alt="">
                 <p>Typescript</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/reactjs.svg" alt="">
                 <p>React JS</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/nextjs.svg" alt="">
                 <p>Next JS</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/tailwind.svg" alt="">
                 <p>Tailwind CSS</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/laravel.svg" alt="">
                 <p>Laravel</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/figma.svg" alt="">
                 <p>Figma</p>
             </div>
-            <div class="cursor-pointer card-skill hover:shadow-xl">
+            <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/liveperson.svg" alt="">
                 <p>Liveperson</p>
             </div>
@@ -113,50 +115,48 @@
     </section>
     <!-- Skills End -->
 
-    <!-- CTA Start -->
-    <section class="py-24 text-center bg-dark-gray">
-        <div class="container-custom lg:w-10/12">
-            <h2 class="text-2xl font-bold text-center text-white mb-7 lg:text-4xl lg:mb-16">I really appreciate any
-                feedback
-                you can
-                provide</h2>
-            <div class="px-10 py-3 font-semibold sm:text-2xl btn-primary font-poppins"><a
-                    href="personal.rafly@gmail.com">Hire Me</a></div>
-        </div>
-    </section>
-    <!-- CTA End -->
+    <!-- Education Start -->
+    <!-- <section class="py-24 text-center bg-dark-gray">
+
+    </section> -->
+    <!-- Education End -->
 
     <!-- Footer Start -->
-    <footer class="pt-10 bg-black lg:pt-16">
-        <div class="text-center container-custom lg:w-10/12">
-            <div class="flex items-center justify-between">
-                <img src="/assets/static/logo-r.svg" alt="" class="w-[70px] h-[70px]">
-                <img src="/assets/static/logo-sky.svg" alt="" class="w-[80px] h-[80px]">
+    <footer class="pt-32 bg-dark lg:pt-40">
+        <div class="relative text-center container-custom lg:w-10/12">
+            <img src="/assets/static/bg-footer.svg" alt="" class="z-0 hidden w-full lg:block">
+            <div class="hidden py-10 text-white top-28 left-20 2xl:block lg:absolute lg:text-start lg:w-4/12">
+                <h4 class="mb-3 text-4xl font-medium">Contact Me</h4>
+                <p class="text-sm lg:text-xl">If you want to communicate more closely and also give feedback, you can
+                    send me a message.</p>
             </div>
-            <div class="flex flex-col items-center w-full py-10 mx-auto space-y-3 text-white">
-                <h2 class="mb-5 text-xl font-bold">Social Media</h2>
-                <p class="text-[#D1D5DB]">Silakan follow akun social media:</p>
-                <span>
-                    <a class="flex items-center space-x-2 text-lg" href="/">
-                        <img src="/assets/static/icons/socials/instagram.svg" alt="">
-                        <p>@rafmlnayh_</p>
+            <form
+                class="lg:absolute w-full z-10 flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-52 lg:right-52">
+                <input type="text" placeholder="Name"
+                    class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
+                <input type="text" placeholder="Email"
+                    class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
+                <input type="text" placeholder="Subject"
+                    class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
+                <textarea type="text" placeholder="Message"
+                    class="py-2 px-3 lg:px-4 lg:py-4 border rounded h-[131px] border-slate-400 text-slate-400"></textarea>
+                <button
+                    class="px-8 py-3 mt-2 text-sm font-semibold text-center text-white rounded-md lg:mt-4 bg-dark sm:text-base">Submit</button>
+            </form>
+            <div class="flex flex-col items-center justify-between py-10 text-white gap-y-7 sm:gap-y-0 sm:flex-row">
+                <img src="/assets/static/logo-r.svg" alt="" class="w-[100px] lg:w-[60px] lg:h-[60px]">
+                <p class="text-sm">&copy; 2023 Rafli Maulana Yusuf Herman. All rights reserved.</p>
+                <div class="flex items-center gap-x-3">
+                    <a href="https://instagram.com/rafmlnayh" target="_blank">
+                        <img src="/assets/static/icons/socials/instagram.svg" alt="" class="social">
                     </a>
-                </span>
-                <span>
-                    <a class="flex items-center space-x-2 text-lg" href="/">
-                        <img src="/assets/static/icons/socials/whatsapp.svg" alt="">
-                        <p>+62 81320179936</p>
+                    <a href="https://linkedin.com/raflimaulana/" target="_blank">
+                        <img src="/assets/static/icons/socials/linkedin.svg" alt="" class="social">
                     </a>
-                </span>
-                <span>
-                    <a class="flex items-center space-x-2 text-lg" href="/">
-                        <img src="/assets/static/icons/socials/linkedin.svg" alt="">
-                        <p>raflimaulana</p>
+                    <a href="https://wa.me/6281320179936" target="_blank">
+                        <img src="/assets/static/icons/socials/whatsapp.svg" alt="" class="social">
                     </a>
-                </span>
-            </div>
-            <div class="py-7 mt-10 text-[#D1D5DB] border-t border-white">
-                <p>&copy; 2023 Rafli Maulana Yusuf Herman. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>
