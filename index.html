@@ -300,23 +300,53 @@
     <!-- Projects End -->
 
     <!-- Education Start -->
-    <!-- <section class="py-32 text-center bg-dark-gray">
+    <section class="py-32 text-center bg-dark-gray">
         <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Education</h2>
-        <article class="grid grid-cols-3 container-custom lg:w-10/12">
-            <div class="relative">
-                <div
-                    class="absolute top-0 -left-[17px] lg:-left-5 bg-[#EA1F27] h-8 w-8 rounded-full border-4 border-white hover:scale-110">
+        <article class="relative overflow-y-auto container-custom lg:w-9/12">
+            <div class="h-[5px] w-full btn-primary"></div>
+            <div class="grid grid-cols-3 gap-5">
+                <div class="relative flex flex-col">
+                    <div
+                        class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
+                    </div>
+                    <div class="flex items-center pt-10 space-x-3">
+                        <img src="/assets/static/images/educations/smk.png" class="w-full lg:w-[80px] lg:h-[80px]"
+                            alt="">
+                        <span class="flex-col hidden text-center sm:flex">
+                            <h6 class="text-lg font-bold text-white lg:text-2xl">SMKN 1 Sumedang</h6>
+                            <p class="text-sm lg:text-base text-gradient-secondary">On Progress</p>
+                        </span>
+                    </div>
                 </div>
-                <div class="flex items-center space-x-3">
-                    <img src="/assets/static/images/educations/nesas.svg" alt="">
-                    <span class="text-center">
-                        <h6 class="text-lg font-bold text-white">Nesas</h6>
-                        <p class="text-sm text-gradient-secondary">On Progress</p>
-                    </span>
+                <div class="relative flex flex-col">
+                    <div
+                        class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
+                    </div>
+                    <div class="flex items-center pt-10 space-x-3">
+                        <img src="/assets/static/images/educations/smp.png" class="w-full lg:w-[80px] lg:h-[80px]"
+                            alt="">
+                        <span class="hidden text-center sm:flex">
+                            <h6 class="text-lg font-bold text-white lg:text-2xl">SMPN 1 Cimalaka</h6>
+                            <p class="text-sm lg:text-base text-gradient-secondary">2018 - 2021</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="relative flex flex-col">
+                    <div
+                        class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
+                    </div>
+                    <div class="flex items-center pt-10 space-x-3">
+                        <img src="/assets/static/images/educations/sd.png" class="w-full lg:w-[80px] lg:h-[80px]"
+                            alt="">
+                        <span class="hidden text-center sm:flex">
+                            <h6 class="text-lg font-bold text-white lg:text-2xl">SDN Cisalak 3</h6>
+                            <p class="text-sm lg:text-base text-gradient-secondary">2012 - 2018</p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </article>
-    </section> -->
+    </section>
     <!-- Education End -->
 
     <!-- Certificate Start -->
@@ -445,24 +475,11 @@
     </footer>
     <!-- Footer End -->
 
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 15,
-            breakpoints: {
-                640: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                },
-            }
-        });
+    <script src="/src/script/swiper.js">
     </script>
 </body>
 
