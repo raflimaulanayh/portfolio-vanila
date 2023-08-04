@@ -2,11 +2,11 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 15,
   loop: true,
-  rewind: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  //   rewind: true,
+  //   autoplay: {
+  //     delay: 3000,
+  //     disableOnInteraction: false,
+  //   },
   breakpoints: {
     640: {
       slidesPerView: 3,
