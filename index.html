@@ -78,9 +78,14 @@
     <!-- Hero End -->
 
     <!-- Skills Start -->
-    <section id="skills" class="relative py-32 lg:py-40 bg-dark">
+    <section id="skills" class="relative py-32 text-center lg:py-40 bg-dark">
         <img src="/assets/static/looper.svg" alt="" class="absolute bottom-0 z-0 w-full">
-        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Skills</h2>
+        <div class="relative z-20 inline-flex flex-col items-center mb-16 group lg:mb-20">
+            <h2 class="pb-2 text-3xl font-bold text-center text-white sm:text-4xl">
+                Skills</h2>
+            <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
+            </div>
+        </div>
         <article class="grid grid-cols-1 gap-5 container-custom lg:w-10/12 sm:grid-flow-col-3 lg:grid-cols-4 lg:gap-8">
             <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/javascript.svg" alt="">
@@ -120,15 +125,20 @@
 
     <!-- Education Start -->
     <section id="education" class="py-32 text-center lg:py-40 bg-dark-gray">
-        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Education</h2>
-        <article class="relative overflow-y-auto container-custom lg:w-9/12">
+        <div class="inline-flex flex-col items-center mb-16 group lg:mb-20">
+            <h2 class="pb-2 text-3xl font-bold text-center text-white sm:text-4xl">
+                Education</h2>
+            <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
+            </div>
+        </div>
+        <article class="relative overflow-x-auto container-custom lg:w-9/12">
             <div class="h-[5px] w-full btn-primary"></div>
             <div class="grid grid-cols-3 gap-5">
                 <div class="relative flex flex-col">
                     <div
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
-                    <div class="flex items-center pt-10 space-x-3">
+                    <div class="flex flex-col items-center pt-10 sm:space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row">
                         <img src="/assets/static/images/educations/smk.png" class="w-full lg:w-[80px] lg:h-[80px]"
                             alt="">
                         <span class="flex-col hidden text-center sm:flex">
@@ -141,7 +151,7 @@
                     <div
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
-                    <div class="flex items-center pt-10 space-x-3">
+                    <div class="flex flex-col items-center pt-10 sm:space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row">
                         <img src="/assets/static/images/educations/smp.png" class="w-full lg:w-[80px] lg:h-[80px]"
                             alt="">
                         <span class="flex-col hidden text-center sm:flex">
@@ -154,7 +164,7 @@
                     <div
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
-                    <div class="flex items-center pt-10 space-x-3">
+                    <div class="flex flex-col items-center pt-10 sm:space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row">
                         <img src="/assets/static/images/educations/sd.png" class="w-full lg:w-[80px] lg:h-[80px]"
                             alt="">
                         <span class="flex-col hidden text-center sm:flex">
@@ -169,8 +179,13 @@
     <!-- Education End -->
 
     <!-- Projects Start -->
-    <section id="projects" class="relative z-30 py-32 lg:py-40 bg-dark">
-        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Projects</h2>
+    <section id="projects" class="relative z-30 py-32 text-center lg:py-40 bg-dark">
+        <div class="inline-flex flex-col items-center mb-16 group lg:mb-20">
+            <h2 class="pb-2 text-3xl font-bold text-center text-white sm:text-4xl">
+                Projects</h2>
+            <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
+            </div>
+        </div>
         <div class="swiper mySwiper container-custom">
             <div class="px-4 swiper-wrapper">
                 <figure
@@ -181,7 +196,7 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://dkk-consulting.vercell.app">
+                        <a target="_blank" href="https://dkk-consulting-web.vercel.app">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -200,7 +215,7 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://impact-alliance.vercell.app">
+                        <a target="_blank" href="https://impact-alliance.vercel.app">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -219,7 +234,7 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://food-id.vercell.app">
+                        <a target="_blank" href="https://food-id.vercel.app">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -238,7 +253,7 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
-                        <a href="">
+                        <a target="_blank" href="https://car-rental-five-livid.vercel.app/">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -276,7 +291,7 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
-                        <a href="">
+                        <a target="_blank" href="https://blog-cerita-pelajar.vercel.app">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -314,7 +329,7 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center gap-x-5 sm:gap-x-10 transition-all duration-500 group-hover:translate-y-0">
-                        <a href="">
+                        <a target="_blank" href="https://sky-foods.vercel.app/">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -350,22 +365,28 @@
     <!-- Projects End -->
 
     <!-- Experience Start -->
-    <section id="experience" class="py-32 lg:py-40 bg-dark-gray">
-        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Experience</h2>
-        <article class="relative container-custom lg:w-8/12">
-            <div class="h-full w-[5px] btn-primary absolute left-0"></div>
+    <section id="experience" class="py-32 text-center lg:py-40 bg-dark-gray">
+        <div class="inline-flex flex-col items-center mb-16 group lg:mb-20">
+            <h2 class="pb-2 text-3xl font-bold text-center text-white sm:text-4xl">
+                Experience</h2>
+            <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
+            </div>
+        </div>
+        <article class="relative container-custom text-start lg:w-8/12">
+            <div class="h-full w-[5px] btn-primary absolute left-6 lg:left-0"></div>
             <div class="flex">
                 <div class="relative pb-7">
                     <div class="relative">
                         <div
-                            class="absolute top-0 -left-[17px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
+                            class="absolute top-0 -left-[2px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
                         </div>
                         <div
-                            class="flex flex-col lg:flex-row lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
-                            <p class="text-xl font-bold lg:w-[300px]">Jun 2023 - Present</p>
+                            class="flex flex-col lg:flex-row ml-8 lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
+                            <p class="text-lg lg:text-xl font-bold lg:w-[300px]">Jun 2023 - Present</p>
                             <div class="lg:w-7/12">
-                                <h4 class="mb-3 text-xl font-bold">Frontend-End Developer at Sawala</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. </p>
+                                <h4 class="mb-3 font-bold sm:text-xl">Frontend-End Developer at Sawala</h4>
+                                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+                                    dolor sit amet consectetur. </p>
                             </div>
                         </div>
                     </div>
@@ -375,14 +396,15 @@
                 <div class="relative pb-7">
                     <div class="relative">
                         <div
-                            class="absolute top-0 -left-[17px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
+                            class="absolute top-0 -left-[2px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
                         </div>
                         <div
-                            class="flex flex-col lg:flex-row lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
-                            <p class="text-xl font-bold lg:w-[300px]">Jan 2023 - May 2023</p>
+                            class="flex flex-col lg:flex-row ml-8 lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
+                            <p class="text-lg lg:text-xl font-bold lg:w-[300px]">Jan 2023 - May 2023</p>
                             <div class="lg:w-7/12">
-                                <h4 class="mb-3 text-xl font-bold">Internship at Sawala</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. </p>
+                                <h4 class="mb-3 font-bold sm:text-xl">Internship at Sawala</h4>
+                                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+                                    dolor sit amet consectetur. </p>
                             </div>
                         </div>
                     </div>
@@ -392,14 +414,15 @@
                 <div class="relative pb-7">
                     <div class="relative">
                         <div
-                            class="absolute top-0 -left-[17px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
+                            class="absolute top-0 -left-[2px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
                         </div>
                         <div
-                            class="flex flex-col lg:flex-row lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
-                            <p class="text-xl font-bold lg:w-[300px]">Jan 2021 - Present</p>
+                            class="flex flex-col lg:flex-row ml-8 lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
+                            <p class="text-lg lg:text-xl font-bold lg:w-[300px]">Jan 2021 - Present</p>
                             <div class="lg:w-7/12">
-                                <h4 class="mb-3 text-xl font-bold">Founder Sky Universe Nusantara</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. </p>
+                                <h4 class="mb-3 font-bold sm:text-xl">Founder Sky Universe Nusantara</h4>
+                                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+                                    dolor sit amet consectetur. </p>
                             </div>
                         </div>
                     </div>
@@ -410,8 +433,13 @@
     <!-- Experience End -->
 
     <!-- Certificate Start -->
-    <section id="certificate" class="relative z-30 py-32 lg:py-40 bg-dark">
-        <h2 class="mb-10 text-4xl font-bold text-center text-white lg:mb-16">Certificates</h2>
+    <section id="certificate" class="relative z-30 py-32 text-center lg:py-40 bg-dark">
+        <div class="inline-flex flex-col items-center mb-16 group lg:mb-20">
+            <h2 class="pb-2 text-3xl font-bold text-center text-white sm:text-4xl">
+                Certificates</h2>
+            <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
+            </div>
+        </div>
         <div class="swiper mySwiper container-custom">
             <div class="px-4 swiper-wrapper">
                 <figure
@@ -422,7 +450,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -437,7 +466,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -452,7 +482,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -467,7 +498,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -482,7 +514,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -497,7 +530,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -512,7 +546,8 @@
                     </div>
                     <figcaption
                         class="absolute text-center inset-0 flex translate-y-[70%] lg:translate-y-[60%] items-center justify-center transition-all duration-500 group-hover:translate-y-0">
-                        <a href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/10KmMxpid61rg8AAyIIDfm1jWPBUEnJNa/view?usp=drivesdk">
                             <img src="/assets/static/icons/preview.svg" alt=""
                                 class="w-[40px] h-[40px] lg:w-[55px] lg:h-[55px]">
                         </a>
@@ -550,13 +585,13 @@
                 <img src="/assets/static/logo-r.svg" alt="" class="w-[100px] lg:w-[60px] lg:h-[60px]">
                 <p class="text-sm">&copy; 2023 Rafli Maulana Yusuf Herman. All rights reserved.</p>
                 <div class="flex items-center gap-x-3">
-                    <a href="https://instagram.com/rafmlnayh" target="_blank">
+                    <a target="_blank" href="https://instagram.com/rafmlnayh" target="_blank">
                         <img src="/assets/static/icons/socials/instagram.svg" alt="" class="social">
                     </a>
-                    <a href="https://www.linkedin.com/in/rafli-maulana-48116525b/" target="_blank">
+                    <a target="_blank" href="https://www.linkedin.com/in/rafli-maulana-48116525b/" target="_blank">
                         <img src="/assets/static/icons/socials/linkedin.svg" alt="" class="social">
                     </a>
-                    <a href="https://wa.me/6281320179936" target="_blank">
+                    <a target="_blank" href="https://wa.me/6281320179936" target="_blank">
                         <img src="/assets/static/icons/socials/whatsapp.svg" alt="" class="social">
                     </a>
                 </div>
