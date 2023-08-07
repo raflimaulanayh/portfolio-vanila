@@ -68,6 +68,10 @@ body {
         margin-left: 120px;
     }
 
+    .blur-navbar {
+        @apply backdrop-blur-lg border-b border-white/70
+    }
+
     @media screen and (max-width: 500px) {
         .swiper-wrapper {
             margin-left: 0px;

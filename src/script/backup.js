@@ -9,15 +9,24 @@ window.onscroll = function () {
   if (window.scrollY > 1) {
     navbarWrapper.classList.add("blur-navbar");
     navbarWrapper.classList.remove("bg-dark");
-  } else {
-    navbarWrapper.classList.remove("blur-navbar");
-    navbarWrapper.classList.add("bg-dark");
   }
-
-  if (window.scrollY > 3000) {
-    toTop.classList.remove("hidden");
-  } else {
-    toTop.classList.add("hidden");
+  switch (window.scrollY && window.scrollY) {
+    case window.scrollY > 1:
+      navbarWrapper.classList.add("blur-navbar");
+      navbarWrapper.classList.remove("bg-dark");
+      break;
+    case window.scrollY < 1:
+      navbarWrapper.classList.add("bg-dark");
+      navbarWrapper.classList.remove("blur-navbar");
+      break;
+    case window.scrollY > 3000:
+      toTop.classList.remove("hidden");
+      break;
+    case window.scrollY < 3000:
+      toTop.classList.add("hidden");
+      break;
+    default:
+      break;
   }
 };
 

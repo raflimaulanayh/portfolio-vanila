@@ -17,13 +17,18 @@
 </head>
 
 <body>
+    <div id="to-top" class="fixed z-50 hidden cursor-pointer bottom-5 right-5 lg:bottom-10 lg:right-10">
+        <a href="#">
+            <img src="/assets/static/icons/to-top.svg" alt="" class="h-[45px] w-[45px] lg:h-[60px] lg:w-[60px]">
+        </a>
+    </div>
     <!-- Navbar Start -->
-    <header class="fixed z-50 w-full border-b backdrop-blur-lg border-white/70">
-        <nav class="flex items-center justify-between py-6 container-custom lg:w-10/12">
+    <header id="navbarWrapper" class="fixed z-50 w-full transition-all duration-300 ease-in-out">
+        <nav class="flex items-center justify-between py-6 container-custom sm:w-10/12">
             <a href="#">
                 <img src="/assets/static/favicon.svg" alt="">
             </a>
-            <span
+            <span id="menu"
                 class="h-[50px] w-[50px] flex items-center justify-center bg-white rounded-full cursor-pointer lg:hidden">
                 <img src="/assets/static/hamburger.svg" alt="">
             </span>
@@ -51,13 +56,37 @@
                         Me</a></span>
             </ul>
         </nav>
+        <!-- Navbar Mobile -->
+        <ul id="menuMobile" class="hidden pt-5 pb-16 space-y-5 font-bold text-center text-white lg:hidden">
+            <li class="hover:text-gradient-primary">
+                <a href="#">Home</a>
+            </li>
+            <li class="hover:text-gradient-primary">
+                <a href="#skills">Skill</a>
+            </li>
+            <li class="hover:text-gradient-primary">
+                <a href="#education">Education</a>
+            </li>
+            <li class="hover:text-gradient-primary">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="hover:text-gradient-primary">
+                <a href="#experience">Experience</a>
+            </li>
+            <li class="hover:text-gradient-primary">
+                <a href="#certificate">Certificate</a>
+            </li>
+            <span class="px-6 py-3 text-sm font-semibold sm:text-base btn-primary font-poppins"><a
+                    href="#contact-me">Hire
+                    Me</a></span>
+        </ul>
     </header>
     <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <section class="pt-32 lg:pt-40 bg-dark">
+    <section class="pt-40 lg:pt-52 bg-dark">
         <div
-            class="flex flex-col-reverse items-center gap-10 container-custom lg:justify-between lg:flex-row lg:w-10/12 lg:gap-52">
+            class="flex flex-col-reverse items-center gap-10 container-custom lg:justify-between lg:flex-row sm:w-10/12 lg:gap-52">
             <article class="lg:w-6/12">
                 <div class="space-y-2">
                     <h1 class="font-bold text-bianca">Hi there, I am</h1>
@@ -86,7 +115,7 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
-        <article class="grid grid-cols-1 gap-5 container-custom lg:w-10/12 sm:grid-flow-col-3 lg:grid-cols-4 lg:gap-8">
+        <article class="grid grid-cols-1 gap-5 container-custom sm:w-10/12 sm:grid-flow-col-3 lg:grid-cols-4 lg:gap-8">
             <div class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/javascript.svg" alt="">
                 <p>Javascript</p>
@@ -131,7 +160,7 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
-        <article class="relative overflow-x-auto container-custom lg:w-9/12">
+        <article class="relative overflow-x-auto container-custom sm:w-9/12">
             <div class="h-[5px] w-full btn-primary"></div>
             <div class="grid grid-cols-3 gap-5">
                 <div class="relative flex flex-col">
@@ -372,7 +401,7 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
-        <article class="relative container-custom text-start lg:w-8/12">
+        <article class="relative container-custom text-start sm:w-8/12">
             <div class="h-full w-[5px] btn-primary absolute left-6 lg:left-0"></div>
             <div class="flex">
                 <div class="relative pb-7">
@@ -560,16 +589,22 @@
     <!-- Certificate End -->
 
     <!-- Footer Start -->
-    <footer id="contact-me" class="pt-32 bg-dark-gray lg:pt-40">
-        <div class="relative text-center container-custom lg:w-10/12">
+    <footer id="contact-me" class="pt-20 text-center bg-dark-gray lg:pt-48">
+        <div class="relative z-20 inline-flex flex-col items-center mb-16 lg:hidden group lg:mb-20">
+            <h2 class="pb-2 text-3xl font-bold text-center text-white sm:text-4xl">
+                Contact Me</h2>
+            <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
+            </div>
+        </div>
+        <div class="relative text-center container-custom sm:w-10/12">
             <img src="/assets/static/bg-footer.svg" alt="" class="z-0 hidden w-full lg:block">
-            <div class="hidden py-10 text-white top-28 left-20 2xl:block lg:absolute lg:text-start lg:w-4/12">
+            <div class="hidden py-10 text-white top-28 left-20 lg:block lg:absolute lg:text-start lg:w-4/12">
                 <h4 class="mb-3 text-4xl font-medium">Contact Me</h4>
                 <p class="text-sm lg:text-xl">If you want to communicate more closely and also give feedback, you can
                     send me a message.</p>
             </div>
             <form
-                class="lg:absolute w-full z-10 flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-52 lg:right-52">
+                class="lg:absolute w-full z-10 flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-48 2xl:bottom-52 lg:right-20 2xl:right-52">
                 <input type="text" placeholder="Name"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
                 <input type="text" placeholder="Email"
@@ -600,7 +635,8 @@
     </footer>
     <!-- Footer End -->
 
-
+    <!-- Custom JS -->
+    <script src="/src/script/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
