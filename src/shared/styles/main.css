@@ -68,13 +68,13 @@ body {
         margin-left: 120px;
     }
 
-    .blur-navbar {
-        @apply border-b backdrop-blur-lg border-white/70;
-    }
-
     @media screen and (max-width: 500px) {
         .swiper-wrapper {
             margin-left: 0px;
         }
     }
+}
+
+.blur-navbar {
+    @apply border-b border-white backdrop-blur-lg border-opacity-70;
 }
