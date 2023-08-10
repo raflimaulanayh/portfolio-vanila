@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Rafli</title>
+    <meta name="description" content="I am someone who always pours all my ideas and thoughts into
+    technology to create something special.">
     <link rel="stylesheet" href="/assets/dist/output.css">
     <link rel="icon" type="image/ico" href="/assets/static/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Link AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Email JS -->
+    <script src="/src/script/email.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('W-q1m_HXhvKQvCha-');
+            emailjs.init("W-q1m_HXhvKQvCha-");
         })();
     </script>
-    <script src="/src/script/email.js" type="text/javascript"></script>
-</head>
 
 <body>
+    <!-- Button To Top -->
     <div data-aos="fade-up" id="to-top"
         class="fixed z-50 hidden cursor-pointer bottom-8 right-8 lg:bottom-10 lg:right-10">
         <a href="#">
             <img src="/assets/static/icons/to-top.svg" alt="" class="h-[50x] w-[50px] lg:h-[60px] lg:w-[60px]">
         </a>
     </div>
+
     <!-- Navbar Start -->
     <header id="navbarWrapper" class="fixed z-50 w-full transition-all duration-300 ease-in-out">
         <nav class="flex items-center justify-between py-6 container-custom sm:w-10/12">
@@ -41,8 +45,10 @@
             </a>
             <span id="menu"
                 class="h-[50px] w-[50px] flex items-center justify-center bg-white rounded-full cursor-pointer lg:hidden">
-                <img src="/assets/static/hamburger.svg" alt="">
+                <img id="nav-open" src="/assets/static/nav-open.svg" alt="">
+                <img id="nav-close" src="/assets/static/nav-close.svg" alt="" class="hidden">
             </span>
+            <!-- Navbar Screen Desktop -->
             <ul class="items-center hidden space-x-5 font-bold text-white lg:flex">
                 <li class="hover:text-gradient-primary">
                     <a href="#">Home</a>
@@ -67,7 +73,7 @@
                         Me</a></span>
             </ul>
         </nav>
-        <!-- Navbar Mobile -->
+        <!-- Navbar Screen Mobile -->
         <ul id="menuMobile" class="hidden pt-5 pb-16 space-y-5 font-bold text-center text-white lg:hidden">
             <li class="hover:text-gradient-primary">
                 <a href="#">Home</a>
@@ -97,25 +103,26 @@
     <!-- Hero Start -->
     <section class="pt-40 lg:pt-52 bg-dark">
         <div
-            class="flex flex-col-reverse items-center gap-10 container-custom lg:justify-between lg:flex-row sm:w-10/12 lg:gap-52">
+            class="flex flex-col-reverse items-center gap-10 container-custom sm:justify-between sm:flex-row sm:w-10/12 lg:gap-52">
             <article data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out"
-                data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-bottom" class="lg:w-6/12">
+                data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-bottom" class="sm:w-6/12">
                 <div class="space-y-2">
                     <h1 class="font-bold text-bianca">Hi there, I am</h1>
-                    <h2 class="text-3xl font-bold text-white sm:text-5xl text-gradient-primary">Rafli Maulana</h2>
-                    <p class="text-lg font-medium text-white sm:text-2xl">Founder Sky Universe Nusantara</p>
-                    <p class="text-sm text-white sm:text-base font-poppins">I am someone who always pours all my ideas
+                    <h2 class="text-3xl font-bold text-white lg:text-5xl text-gradient-primary">Rafli Maulana</h2>
+                    <p class="text-lg font-medium text-white lg:text-2xl">Founder Sky Universe Nusantara</p>
+                    <p class="text-sm text-white lg:text-base font-poppins">I am someone who always pours all my ideas
                         and thoughts into
                         technology to create something special.
                     </p>
                 </div>
                 <span class="px-8 py-3 mt-5 text-sm font-semibold sm:text-base sm:mt-8 btn-primary font-poppins"><a
-                        href="https://www.linkedin.com/in/rafli-maulana-48116525b/">Download
+                        target="_blank" href="https://www.linkedin.com/in/raflimaulanayh/">Download
                         CV</a></span>
             </article>
             <img data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out"
-                data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-bottom"
-                src="/assets/static/images/hero/foto-rafli-v2.svg" alt="" class="w-11/12 bg-no-repeat lg:w-6/12">
+                data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-bottom"
+                src="/assets/static/images/hero/foto-rafli-v2.svg" alt=""
+                class="w-11/12 bg-no-repeat sm:max-w-lg lg:max-w-none sm:w-6/12">
         </div>
     </section>
     <!-- Hero End -->
@@ -129,7 +136,7 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
-        <article class="grid grid-cols-1 gap-5 container-custom sm:w-10/12 sm:grid-flow-col-3 lg:grid-cols-4 lg:gap-8">
+        <article class="grid grid-cols-1 gap-5 container-custom sm:w-10/12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
             <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/javascript.svg" alt="">
                 <p>Javascript</p>
@@ -182,8 +189,8 @@
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
                     <div class="flex flex-col items-center pt-10 sm:space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row">
-                        <img src="/assets/static/images/educations/smk.png" class="w-full lg:w-[80px] lg:h-[80px]"
-                            alt="">
+                        <img src="/assets/static/images/educations/smk.png"
+                            class="w-full max-w-[100px] lg:w-[80px] lg:h-[80px]" alt="">
                         <span class="flex-col hidden text-center sm:flex">
                             <h6 class="text-lg font-bold text-white lg:text-2xl">SMKN 1 Sumedang</h6>
                             <p class="text-sm lg:text-base text-gradient-secondary">On Progress</p>
@@ -195,8 +202,8 @@
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
                     <div class="flex flex-col items-center pt-10 sm:space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row">
-                        <img src="/assets/static/images/educations/smp.png" class="w-full lg:w-[80px] lg:h-[80px]"
-                            alt="">
+                        <img src="/assets/static/images/educations/smp.png"
+                            class="w-full max-w-[100px] lg:w-[80px] lg:h-[80px]" alt="">
                         <span class="flex-col hidden text-center sm:flex">
                             <h6 class="text-lg font-bold text-white lg:text-2xl">SMPN 1 Cimalaka</h6>
                             <p class="text-sm lg:text-base text-gradient-secondary">2018 - 2021</p>
@@ -208,8 +215,8 @@
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
                     <div class="flex flex-col items-center pt-10 sm:space-y-5 lg:space-y-0 lg:space-x-5 lg:flex-row">
-                        <img src="/assets/static/images/educations/sd.png" class="w-full lg:w-[80px] lg:h-[80px]"
-                            alt="">
+                        <img src="/assets/static/images/educations/sd.png"
+                            class="w-full max-w-[100px] lg:w-[80px] lg:h-[80px]" alt="">
                         <span class="flex-col hidden text-center sm:flex">
                             <h6 class="text-lg font-bold text-white lg:text-2xl">SDN Cisalak 3</h6>
                             <p class="text-sm lg:text-base text-gradient-secondary">2012 - 2018</p>
@@ -415,16 +422,16 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
-        <article data-aos="fade-zoom-in" data-aos-duration="700" class="relative container-custom text-start sm:w-8/12">
-            <div class="h-full w-[5px] btn-primary absolute left-6 lg:left-0"></div>
+        <article data-aos="fade-zoom-in" data-aos-duration="700" class="relative container-custom sm:w-9/12 text-start">
+            <div class="h-full w-[5px] btn-primary absolute left-6 lg:left-10"></div>
             <div class="flex">
                 <div class="relative pb-7">
                     <div class="relative">
                         <div
-                            class="absolute top-0 -left-[2px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
+                            class="absolute top-0 -left-[2px] lg:left-[15px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
                         </div>
                         <div
-                            class="flex flex-col lg:flex-row ml-8 lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
+                            class="flex flex-col lg:flex-row ml-8 lg:ml-20 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
                             <p class="text-lg lg:text-xl font-bold lg:w-[300px]">Jun 2023 - Present</p>
                             <div class="lg:w-7/12">
                                 <h4 class="mb-3 font-bold sm:text-xl">Frontend-End Developer at Sawala</h4>
@@ -439,10 +446,10 @@
                 <div class="relative pb-7">
                     <div class="relative">
                         <div
-                            class="absolute top-0 -left-[2px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
+                            class="absolute top-0 -left-[2px] lg:left-[15px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
                         </div>
                         <div
-                            class="flex flex-col lg:flex-row ml-8 lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
+                            class="flex flex-col lg:flex-row ml-8 lg:ml-20 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
                             <p class="text-lg lg:text-xl font-bold lg:w-[300px]">Jan 2023 - May 2023</p>
                             <div class="lg:w-7/12">
                                 <h4 class="mb-3 font-bold sm:text-xl">Internship at Sawala</h4>
@@ -457,10 +464,10 @@
                 <div class="relative pb-7">
                     <div class="relative">
                         <div
-                            class="absolute top-0 -left-[2px] lg:-left-[26px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
+                            class="absolute top-0 -left-[2px] lg:left-[15px] btn-primary h-6 w-6 rounded-full border-4 border-white hover:scale-110">
                         </div>
                         <div
-                            class="flex flex-col lg:flex-row ml-8 lg:ml-10 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
+                            class="flex flex-col lg:flex-row ml-8 lg:ml-20 text-white pb-3 lg:pb-6 rounded-b-[30px] rounded-tr-[30px]">
                             <p class="text-lg lg:text-xl font-bold lg:w-[300px]">Jan 2021 - Present</p>
                             <div class="lg:w-7/12">
                                 <h4 class="mb-3 font-bold sm:text-xl">Founder Sky Universe Nusantara</h4>
@@ -610,6 +617,7 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
+
         <div class="relative text-center container-custom sm:w-10/12">
             <img data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"
                 data-aos-mirror="true" data-aos-once="true" src="/assets/static/bg-footer.svg" alt=""
@@ -621,21 +629,30 @@
                 <p class="text-sm lg:text-xl">If you want to communicate more closely and also give feedback, you can
                     send me a message.</p>
             </div>
-            <form id="contact-form" data-aos="fade-left" data-aos-delay="50" data-aos-duration="700"
-                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
+            <form data-aos="fade-left" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="true"
                 class="lg:absolute w-full z-10 flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-48 2xl:bottom-52 lg:right-20 2xl:right-52">
-                <input type="hidden" name="contact_number">
-                <input name="user_name" type="text" placeholder="Name"
+
+                <div id="popup-open" class="hidden">
+                    <span
+                        class="flex items-center justify-between p-4 font-medium text-white bg-green-500 rounded lg:p-5 text-start">
+                        <p>Your message sent successfully</p>
+                        <img id="popup-close" src="/assets/static/icons/close.svg" alt="" class="cursor-pointer">
+                    </span>
+                </div>
+
+                <input id="name" type="text" placeholder="Name"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
-                <input name="user_email" type="email" placeholder="Email"
+                <input id="email" type="email" placeholder="Email"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
-                <input name="user_name" type="text" placeholder="Subject"
+                <input id="subject" type="text" placeholder="Subject"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
-                <textarea name="message" type="text" placeholder="Message"
+                <textarea id="message" type="text" placeholder="Message"
                     class="py-2 px-3 lg:px-4 lg:py-4 border rounded h-[131px] border-slate-400 text-dark"></textarea>
-                <button type="submit"
+                <button onclick="sendMail()"
                     class="px-8 py-3 mt-2 text-sm font-semibold text-center text-white rounded-md lg:mt-4 bg-dark sm:text-base">Submit</button>
             </form>
+
             <div class="flex flex-col items-center justify-between py-10 text-white gap-y-7 sm:gap-y-0 sm:flex-row">
                 <img src="/assets/static/logo-r.svg" alt="" class="w-[100px] lg:w-[60px] lg:h-[60px]">
                 <p class="text-sm">&copy; 2023 Rafli Maulana Yusuf Herman. All rights reserved.</p>
@@ -657,16 +674,18 @@
 
     <!-- Custom JS -->
     <script src="/src/script/main.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script src="/src/script/swiper.js"></script>
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="/src/script/swiper.js"></script>
 </body>
 
 </html>
