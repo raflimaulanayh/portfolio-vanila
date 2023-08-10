@@ -2,6 +2,7 @@ const menu = document.querySelector("#menu");
 const menuMobile = document.querySelector("#menuMobile");
 const navOpen = document.querySelector("#nav-open");
 const navClose = document.querySelector("#nav-close");
+const navHeight = document.querySelector("#nav-height");
 const navbarWrapper = document.querySelector("#navbarWrapper");
 const toTop = document.querySelector("#to-top");
 const openPU = document.querySelector("#popup-open");
@@ -17,9 +18,13 @@ window.onscroll = function () {
   if (window.scrollY > 1) {
     navbarWrapper.classList.add("blur-navbar");
     navbarWrapper.classList.remove("bg-dark");
+    navHeight.classList.remove("py-7");
+    navHeight.classList.add("py-5");
   } else {
     navbarWrapper.classList.remove("blur-navbar");
     navbarWrapper.classList.add("bg-dark");
+    navHeight.classList.add("py-7");
+    navHeight.classList.remove("py-5");
   }
 
   if (window.scrollY > 3000) {
