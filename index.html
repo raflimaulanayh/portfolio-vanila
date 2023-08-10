@@ -11,15 +11,26 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('W-q1m_HXhvKQvCha-');
+        })();
+    </script>
+    <script src="/src/script/email.js" type="text/javascript"></script>
 </head>
 
 <body>
-    <div id="to-top" class="fixed z-50 hidden cursor-pointer bottom-5 right-5 lg:bottom-10 lg:right-10">
+    <div data-aos="fade-up" id="to-top"
+        class="fixed z-50 hidden cursor-pointer bottom-8 right-8 lg:bottom-10 lg:right-10">
         <a href="#">
-            <img src="/assets/static/icons/to-top.svg" alt="" class="h-[45px] w-[45px] lg:h-[60px] lg:w-[60px]">
+            <img src="/assets/static/icons/to-top.svg" alt="" class="h-[50x] w-[50px] lg:h-[60px] lg:w-[60px]">
         </a>
     </div>
     <!-- Navbar Start -->
@@ -87,7 +98,8 @@
     <section class="pt-40 lg:pt-52 bg-dark">
         <div
             class="flex flex-col-reverse items-center gap-10 container-custom lg:justify-between lg:flex-row sm:w-10/12 lg:gap-52">
-            <article class="lg:w-6/12">
+            <article data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-bottom" class="lg:w-6/12">
                 <div class="space-y-2">
                     <h1 class="font-bold text-bianca">Hi there, I am</h1>
                     <h2 class="text-3xl font-bold text-white sm:text-5xl text-gradient-primary">Rafli Maulana</h2>
@@ -101,7 +113,9 @@
                         href="https://www.linkedin.com/in/rafli-maulana-48116525b/">Download
                         CV</a></span>
             </article>
-            <img src="/assets/static/images/hero/foto-rafli-v2.svg" alt="" class="w-11/12 bg-no-repeat lg:w-6/12">
+            <img data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-bottom"
+                src="/assets/static/images/hero/foto-rafli-v2.svg" alt="" class="w-11/12 bg-no-repeat lg:w-6/12">
         </div>
     </section>
     <!-- Hero End -->
@@ -116,35 +130,35 @@
             </div>
         </div>
         <article class="grid grid-cols-1 gap-5 container-custom sm:w-10/12 sm:grid-flow-col-3 lg:grid-cols-4 lg:gap-8">
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/javascript.svg" alt="">
                 <p>Javascript</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/typescript.svg" alt="">
                 <p>Typescript</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/reactjs.svg" alt="">
                 <p>React JS</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/nextjs.svg" alt="">
                 <p>Next JS</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/tailwind.svg" alt="">
                 <p>Tailwind CSS</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/laravel.svg" alt="">
                 <p>Laravel</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/figma.svg" alt="">
                 <p>Figma</p>
             </div>
-            <div class="cursor-pointer card-skill">
+            <div data-aos="zoom-in" class="cursor-pointer card-skill">
                 <img src="/assets/static/images/skills/liveperson.svg" alt="">
                 <p>Liveperson</p>
             </div>
@@ -161,9 +175,9 @@
             </div>
         </div>
         <article class="relative overflow-x-auto container-custom sm:w-9/12">
-            <div class="h-[5px] w-full btn-primary"></div>
+            <div data-aos="fade-zoom-in" data-aos-duration="700" class="h-[5px] w-full btn-primary"></div>
             <div class="grid grid-cols-3 gap-5">
-                <div class="relative flex flex-col">
+                <div data-aos="fade-zoom-in" data-aos-duration="700" class="relative flex flex-col">
                     <div
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
@@ -176,7 +190,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="relative flex flex-col">
+                <div data-aos="fade-zoom-in" data-aos-duration="700" class="relative flex flex-col">
                     <div
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
@@ -189,7 +203,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="relative flex flex-col">
+                <div data-aos="fade-zoom-in" data-aos-duration="700" class="relative flex flex-col">
                     <div
                         class="absolute w-6 h-6 transform translate-x-[50%] -top-5 border-4 border-white rounded-full right-[50%] btn-primary hover:scale-110">
                     </div>
@@ -217,7 +231,7 @@
         </div>
         <div class="swiper mySwiper container-custom">
             <div class="px-4 swiper-wrapper">
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/dkk-consulting.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -236,7 +250,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">DKK Consulting</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/impact-alliance.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -255,7 +269,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Impact Alliance</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/food-id.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -274,7 +288,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">FOOD ID</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/car-rental.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -293,7 +307,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Rental Car</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/ima.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -312,7 +326,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">IMA x Tempo</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/cerita-pelajar.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -331,7 +345,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Cerita Pelajar</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/voting-yuk.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -350,7 +364,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Voting Yuk</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/sky-food.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -369,7 +383,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Sky Foods</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/projects/konversi.png" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-115" />
@@ -401,7 +415,7 @@
             <div class="self-start w-8/12 h-1 transition-all group-hover:w-full bg-bianca group-hover:btn-primary">
             </div>
         </div>
-        <article class="relative container-custom text-start sm:w-8/12">
+        <article data-aos="fade-zoom-in" data-aos-duration="700" class="relative container-custom text-start sm:w-8/12">
             <div class="h-full w-[5px] btn-primary absolute left-6 lg:left-0"></div>
             <div class="flex">
                 <div class="relative pb-7">
@@ -471,7 +485,7 @@
         </div>
         <div class="swiper mySwiper container-custom">
             <div class="px-4 swiper-wrapper">
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/internship-sawala.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -487,7 +501,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Sawala Internship</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/javascript-course.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -503,7 +517,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Javascript Course</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/reactjs-course.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -519,7 +533,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">React JS Course</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/laravel-course.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -535,7 +549,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Laravel Course</h6>
                 </figure>
-                <figure
+                <figure data-aos="zoom-in"
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/tailwindcss-course.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -551,7 +565,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">TailwindCSS Course</h6>
                 </figure>
-                <figure
+                <figure data-aos="fade-zoom-in" 4
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/internship-sawala.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -567,7 +581,7 @@
                     </figcaption>
                     <h6 class="pt-2 font-bold text-center text-white">Sawala Internship</h6>
                 </figure>
-                <figure
+                <figure data-aos="fade-zoom-in" 4
                     class="relative flex flex-col items-center justify-center max-w-lg px-3 py-4 overflow-hidden swiper-slide rounded-2xl bg-dark-gray group">
                     <img src="/assets/static/images/certificates/internship-sawala.jpg" alt=""
                         class="object-cover w-full h-full transition-transform duration-500 rounded-2xl group-hover:scale-115" />
@@ -597,23 +611,29 @@
             </div>
         </div>
         <div class="relative text-center container-custom sm:w-10/12">
-            <img src="/assets/static/bg-footer.svg" alt="" class="z-0 hidden w-full lg:block">
-            <div class="hidden py-10 text-white top-28 left-20 lg:block lg:absolute lg:text-start lg:w-4/12">
+            <img data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="true" src="/assets/static/bg-footer.svg" alt=""
+                class="z-0 hidden w-full lg:block">
+            <div data-aos="fade-right" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="true"
+                class="hidden py-10 text-white top-28 left-20 lg:block lg:absolute lg:text-start lg:w-4/12">
                 <h4 class="mb-3 text-4xl font-medium">Contact Me</h4>
                 <p class="text-sm lg:text-xl">If you want to communicate more closely and also give feedback, you can
                     send me a message.</p>
             </div>
-            <form
+            <form id="contact-form" data-aos="fade-left" data-aos-delay="50" data-aos-duration="700"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true"
                 class="lg:absolute w-full z-10 flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-48 2xl:bottom-52 lg:right-20 2xl:right-52">
-                <input type="text" placeholder="Name"
+                <input type="hidden" name="contact_number">
+                <input name="user_name" type="text" placeholder="Name"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
-                <input type="text" placeholder="Email"
+                <input name="user_email" type="email" placeholder="Email"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
-                <input type="text" placeholder="Subject"
+                <input name="user_name" type="text" placeholder="Subject"
                     class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
-                <textarea type="text" placeholder="Message"
-                    class="py-2 px-3 lg:px-4 lg:py-4 border rounded h-[131px] border-slate-400 text-slate-400"></textarea>
-                <button
+                <textarea name="message" type="text" placeholder="Message"
+                    class="py-2 px-3 lg:px-4 lg:py-4 border rounded h-[131px] border-slate-400 text-dark"></textarea>
+                <button type="submit"
                     class="px-8 py-3 mt-2 text-sm font-semibold text-center text-white rounded-md lg:mt-4 bg-dark sm:text-base">Submit</button>
             </form>
             <div class="flex flex-col items-center justify-between py-10 text-white gap-y-7 sm:gap-y-0 sm:flex-row">
@@ -640,7 +660,12 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script src="/src/script/swiper.js">
+    <script src="/src/script/swiper.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

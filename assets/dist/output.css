@@ -662,14 +662,6 @@ video {
   margin-left: 120px;
 }
 
-.blur-navbar {
-  border-bottom-width: 1px;
-  border-color: rgb(255 255 255 / 0.7);
-  --tw-backdrop-blur: blur(16px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 @media screen and (max-width: 500px) {
   .swiper-wrapper {
     margin-left: 0px;
@@ -704,8 +696,8 @@ video {
   bottom: 0px;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
+.bottom-8 {
+  bottom: 2rem;
 }
 
 .left-20 {
@@ -716,8 +708,8 @@ video {
   left: 1.5rem;
 }
 
-.right-5 {
-  right: 1.25rem;
+.right-8 {
+  right: 2rem;
 }
 
 .right-\[50\%\] {
@@ -808,12 +800,12 @@ video {
   height: 40px;
 }
 
-.h-\[45px\] {
-  height: 45px;
-}
-
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-\[50x\] {
+  height: 50x;
 }
 
 .h-\[5px\] {
@@ -846,10 +838,6 @@ video {
 
 .w-\[40px\] {
   width: 40px;
-}
-
-.w-\[45px\] {
-  width: 45px;
 }
 
 .w-\[50px\] {

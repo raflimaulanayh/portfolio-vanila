@@ -4,5 +4,8 @@
   },
   "scripts": {
     "dev": "npx tailwindcss -i ./src/shared/styles/main.css -o ./assets/dist/output.css --watch"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

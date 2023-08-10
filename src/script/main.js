@@ -1,5 +1,3 @@
-console.log("success");
-
 const menu = document.querySelector("#menu");
 const menuMobile = document.querySelector("#menuMobile");
 const navbarWrapper = document.querySelector("#navbarWrapper");

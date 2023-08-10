@@ -69,7 +69,7 @@ body {
     }
 
     .blur-navbar {
-        @apply backdrop-blur-lg border-b border-white/70
+        @apply border-b backdrop-blur-lg border-white/70;
     }
 
     @media screen and (max-width: 500px) {
