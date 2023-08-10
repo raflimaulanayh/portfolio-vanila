@@ -744,11 +744,6 @@ video {
   z-index: 50;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1029,14 +1024,14 @@ video {
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-no-repeat {
@@ -1048,16 +1043,8 @@ video {
      object-fit: cover;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-3 {
@@ -1306,10 +1293,6 @@ body {
     width: 50%;
   }
 
-  .sm\:w-8\/12 {
-    width: 66.666667%;
-  }
-
   .sm\:w-9\/12 {
     width: 75%;
   }
@@ -1366,10 +1349,6 @@ body {
     position: absolute;
   }
 
-  .lg\:-left-\[26px\] {
-    left: -26px;
-  }
-
   .lg\:bottom-10 {
     bottom: 2.5rem;
   }
@@ -1378,8 +1357,12 @@ body {
     bottom: 12rem;
   }
 
-  .lg\:left-0 {
-    left: 0px;
+  .lg\:left-10 {
+    left: 2.5rem;
+  }
+
+  .lg\:left-\[15px\] {
+    left: 15px;
   }
 
   .lg\:right-10 {
@@ -1390,52 +1373,20 @@ body {
     right: 5rem;
   }
 
-  .lg\:left-10 {
-    left: 2.5rem;
-  }
-
-  .lg\:-left-\[10px\] {
-    left: -10px;
-  }
-
-  .lg\:-left-\[7px\] {
-    left: -7px;
-  }
-
-  .lg\:-left-\[2px\] {
-    left: -2px;
-  }
-
-  .lg\:left-3 {
-    left: 0.75rem;
-  }
-
-  .lg\:left-\[15px\] {
-    left: 15px;
-  }
-
   .lg\:mb-20 {
     margin-bottom: 5rem;
-  }
-
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
-  .lg\:mt-4 {
-    margin-top: 1rem;
   }
 
   .lg\:ml-20 {
     margin-left: 5rem;
   }
 
-  .lg\:ml-24 {
-    margin-left: 6rem;
+  .lg\:mt-4 {
+    margin-top: 1rem;
   }
 
-  .lg\:ml-16 {
-    margin-left: 4rem;
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
   }
 
   .lg\:block {
@@ -1574,10 +1525,6 @@ body {
 
   .lg\:pt-52 {
     padding-top: 13rem;
-  }
-
-  .lg\:pl-10 {
-    padding-left: 2.5rem;
   }
 
   .lg\:text-start {
