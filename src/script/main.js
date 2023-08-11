@@ -19,12 +19,12 @@ window.onscroll = function () {
     navbarWrapper.classList.add("blur-navbar");
     navbarWrapper.classList.remove("bg-dark");
     navHeight.classList.remove("py-7");
-    navHeight.classList.add("py-5");
+    navHeight.classList.add("nav-scroll-p");
   } else {
     navbarWrapper.classList.remove("blur-navbar");
     navbarWrapper.classList.add("bg-dark");
     navHeight.classList.add("py-7");
-    navHeight.classList.remove("py-5");
+    navHeight.classList.remove("nav-scroll-p");
   }
 
   if (window.scrollY > 3000) {

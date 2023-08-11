@@ -78,3 +78,7 @@ body {
 .blur-navbar {
     @apply border-b border-white backdrop-blur-lg border-opacity-70;
 }
+
+.nav-scroll-p {
+    @apply py-5;
+}
