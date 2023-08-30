@@ -639,9 +639,36 @@
                 <p class="text-sm lg:text-xl">If you want to communicate more closely and also give feedback, you can
                     send me a message.</p>
             </div>
+
+            <!-- Form Screen Desktop -->
             <form data-aos="fade-left" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"
                 data-aos-mirror="true" data-aos-once="true"
-                class="lg:absolute w-full z-10 flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-48 2xl:bottom-52 lg:right-20 2xl:right-52">
+                class="lg:absolute w-full z-10 hidden lg:flex flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-48 2xl:bottom-52 lg:right-20 2xl:right-52">
+
+                <div id="popup-open" class="hidden">
+                    <span
+                        class="flex items-center justify-between p-4 font-medium text-white bg-green-500 rounded lg:p-5 text-start">
+                        <p>Your message sent successfully</p>
+                        <img id="popup-close" src="/assets/static/icons/close.svg" alt="" class="cursor-pointer">
+                    </span>
+                </div>
+
+                <input id="name" type="text" placeholder="Name"
+                    class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
+                <input id="email" type="email" placeholder="Email"
+                    class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
+                <input id="subject" type="text" placeholder="Subject"
+                    class="px-3 py-3 border rounded lg:px-4 lg:py-4 border-slate-400 text-dark">
+                <textarea id="message" type="text" placeholder="Message"
+                    class="py-2 px-3 lg:px-4 lg:py-4 border rounded h-[131px] border-slate-400 text-dark"></textarea>
+                <button id="btn-submit" onclick="sendMail()"
+                    class="px-8 py-3 mt-2 text-sm font-semibold text-center text-white rounded-md lg:mt-4 bg-dark sm:text-base">Submit</button>
+            </form>
+
+            <!-- Form Screen Mobile -->
+            <form data-aos="fade-up" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="true"
+                class="lg:absolute w-full z-10 flex lg:hidden flex-col px-4 lg:px-7 py-10 lg:py-12 lg:w-[460px] gap-y-4 bg-white shadow-dark shadow-xl rounded-2xl bottom-0 lg:bottom-48 2xl:bottom-52 lg:right-20 2xl:right-52">
 
                 <div id="popup-open" class="hidden">
                     <span
